@@ -204,9 +204,9 @@ typedef volatile sint_64    v_sint_64;
 /*  Target-specific library compatibility issues                            */
 /* ======================================================================== */
 
-#if defined (__APPLE__) && defined(__MACH__) && !defined(macosx)
-# define macosx
-#endif
+//#if defined (__APPLE__) && defined(__MACH__) && !defined(macosx)
+//# define macosx
+//#endif
 
 #ifdef linux
 # define USE_STRCASECMP
@@ -268,7 +268,7 @@ typedef volatile sint_64    v_sint_64;
 # define NO_GETCWD
 #endif
 
-#ifdef macosx
+#ifdef __APPLE__
 # define NO_RAND48
 # define NO_INOUT
 # define NO_GETOPT_LONG
@@ -392,7 +392,7 @@ typedef volatile sint_64    v_sint_64;
 #define CGC_DLL
 #endif
 
-#if defined(macosx)
+#if defined(__APPLE__)
 #define CGC_SUPPORTED
 #define CGC_THREAD
 #endif

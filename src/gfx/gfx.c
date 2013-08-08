@@ -519,15 +519,15 @@ int gfx_init(gfx_t *gfx, int desire_x, int desire_y,
     /* -------------------------------------------------------------------- */
     /*  Set up initial graphics mode.                                       */
     /* -------------------------------------------------------------------- */
-    if (gfx_setup_sdl_surface(gfx, flags, !verbose) < 0)
-        gfx_sdl_abort();
+    //if (gfx_setup_sdl_surface(gfx, flags, !verbose) < 0)
+    //    gfx_sdl_abort();
 
     /* -------------------------------------------------------------------- */
     /*  Ok, see if we succeeded in setting our initial video mode, and do   */
     /*  some minor tidying.                                                 */
     /* -------------------------------------------------------------------- */
-    if (!gfx->pvt->scr || SDL_Flip(gfx->pvt->scr) == -1)
-        gfx_sdl_abort();
+    //if (!gfx->pvt->scr || SDL_Flip(gfx->pvt->scr) == -1)
+    //    gfx_sdl_abort();
 
     /* -------------------------------------------------------------------- */
     /*  Hide the mouse.                                                     */

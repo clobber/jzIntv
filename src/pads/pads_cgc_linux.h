@@ -13,7 +13,7 @@
 
 #ifndef PAD_CGC_LINUX_H_
 #define PAD_CGC_LINUX_H_
-#if defined(linux) || defined(macosx)
+#if defined(linux) || defined(__APPLE__)
 
 /* ======================================================================== */
 /*  PAD_CGC_INIT -- Initializes a Classic Gaming Controller interface.      */
